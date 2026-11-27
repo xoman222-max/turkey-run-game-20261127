@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gobble Dash — A Turkey's Thanksgiving Escape</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #1c0f1e; }
+  #wrap { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  canvas { width: min(100vw, 177.78vh); height: min(100vh, 56.25vw); display: block; background: #2a1420; touch-action: none; cursor: pointer; }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720" aria-label="Gobble Dash: a turkey runs from the farmer, jumps hay bales and ovens, ducks flying carving knives, and grabs corn to reach the forest"></canvas>
+</div>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
